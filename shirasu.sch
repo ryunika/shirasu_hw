@@ -22035,8 +22035,8 @@ Source: 8x ADG1408_1409.pdf</description>
 <part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
-<part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
+<part name="R40" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
+<part name="R39" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GNDA" device=""/>
 <part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="C31" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
@@ -22443,11 +22443,11 @@ Source: 8x ADG1408_1409.pdf</description>
 <instance part="P+12" gate="VCC" x="-20.32" y="25.4" smashed="yes">
 <attribute name="VALUE" x="-22.86" y="22.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R39" gate="G$1" x="-20.32" y="15.24" smashed="yes" rot="R90">
+<instance part="R40" gate="G$1" x="-20.32" y="15.24" smashed="yes" rot="R90">
 <attribute name="NAME" x="-21.8186" y="13.97" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-17.018" y="11.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R40" gate="G$1" x="-20.32" y="0" smashed="yes" rot="R90">
+<instance part="R39" gate="G$1" x="-20.32" y="0" smashed="yes" rot="R90">
 <attribute name="NAME" x="-21.8186" y="-1.27" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-17.018" y="-3.81" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -22872,7 +22872,7 @@ Source: 8x ADG1408_1409.pdf</description>
 <pinref part="C38" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R40" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="1"/>
 <pinref part="GND38" gate="1" pin="GNDA"/>
 <wire x1="-20.32" y1="-5.08" x2="-20.32" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="1"/>
@@ -23144,7 +23144,7 @@ Source: 8x ADG1408_1409.pdf</description>
 <pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R39" gate="G$1" pin="2"/>
+<pinref part="R40" gate="G$1" pin="2"/>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
 <wire x1="-20.32" y1="20.32" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
 </segment>
@@ -23892,8 +23892,8 @@ Source: 8x ADG1408_1409.pdf</description>
 </net>
 <net name="VSENSE" class="0">
 <segment>
-<pinref part="R39" gate="G$1" pin="1"/>
-<pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="R40" gate="G$1" pin="1"/>
+<pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="10.16" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="7.62" x2="-20.32" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
@@ -23947,13 +23947,14 @@ Source: 8x ADG1408_1409.pdf</description>
 <wire x1="25.4" y1="88.9" x2="22.86" y2="88.9" width="0.1524" layer="91"/>
 <junction x="25.4" y="88.9"/>
 <label x="48.26" y="76.2" size="1.778" layer="95" rot="R180"/>
-<pinref part="U1" gate="A" pin="PA4"/>
-<wire x1="60.96" y1="73.66" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="73.66" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="PA3"/>
 <wire x1="60.96" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="76.2" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="PA5"/>
+<wire x1="60.96" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="71.12" x2="55.88" y2="73.66" width="0.1524" layer="91"/>
 <junction x="55.88" y="73.66"/>
 </segment>
 </net>
